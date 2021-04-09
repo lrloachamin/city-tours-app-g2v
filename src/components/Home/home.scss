@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Pacifico&display=swap');
+@import "../../index.scss";
+
+.grid-home{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info  logo";
+}
+
+.info-section{
+    grid-area: info;
+    margin: 4rem 4rem;
+}
+.logo-section{
+    grid-area: logo;  
+}
+.header{
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: $mainWhite;
+}
+.header-pro{
+    margin-top: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #a4a013;
+}
+.info-tours{
+    margin-top: 2rem; 
+    h3{
+    padding: 0.8rem 0.8rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+    color: $mainWhite;
+    }
+    
+}
+.img-section{
+    padding-top: 6rem ;
+    padding-right: 2.5rem;
+
+}
+.img-section img{
+    width: 100%;
+    height: 60vh;
+    opacity: 0.8;
+    border: 0.3rem solid #a4a013;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 50px;
+}
+.info-section button{
+    background-color: #a4a013;
+    font-size: 1.5rem;
+    padding: 0.5rem 4rem;
+    color: black;
+    border: 3px solid #4CAF50;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 0.5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.info-section button:hover{
+    background-color: #aa1660;
+    color: white;
+}
